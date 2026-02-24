@@ -1,5 +1,5 @@
 """
-API Helper for Genius - Fixed version
+API Helper for Genius 
 """
 
 import os
@@ -107,7 +107,7 @@ class GeniusHelper:
     
     def _scrape_lyrics(self, url):
         """
-        Scrape lyrics - improved to handle current Genius HTML structure
+        Scrape lyrics 
         """
         try:
             headers = {
@@ -187,7 +187,6 @@ class GeniusHelper:
                 if len(line_stripped) < 3:
                     continue
                 
-                # This looks like actual lyrics - keep it
                 clean_lines.append(line_stripped)
             
             # Join cleaned lines
