@@ -1,20 +1,3 @@
-"""
-Flask Web Application (Option B Backend Response)
-Returns:
-{
-  success: True,
-  song: {...},
-  analysis: {
-    sections_count: int,
-    processing_time_ms: int,
-    song_summary: str | None,
-    youtube_video_id: str | None,
-    youtube_video_url: str | None
-  },
-  sections: [...]
-}
-"""
-
 from flask import Flask, render_template, request, jsonify
 from detector import ReferenceDetector
 from api_helper import GeniusHelper
